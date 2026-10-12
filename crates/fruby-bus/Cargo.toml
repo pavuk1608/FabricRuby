@@ -1,0 +1,21 @@
+# FabricRuby/crates/fruby-bus/Cargo.toml
+
+[package]
+name = "fruby-bus"
+description = "FabricRuby: шина межпроцессного обмена (SysV IPC, POSIX shm, семафоры)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license-file.workspace = true
+publish.workspace = true
+
+[features]
+default = []
+
+[dependencies]
+fruby-types  = { workspace = true }
+fruby-crypto = { workspace = true }
+heapless     = { workspace = true }
+
+[lints.rust]
+missing_docs = "warn"
